@@ -71,7 +71,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    color: var(--clr-primary);
+    color: var(--clr-white);
 }
 
 h3 {
@@ -148,6 +148,7 @@ p {
 
 .section {
     padding: 5rem 0;
+    background: var(--clr-primary);
 }
 
 .section-center {
@@ -332,7 +333,7 @@ Sidebar
 
 .social-icon {
     font-size: 1.5rem;
-    color: var(--clr-primary);
+    color: var(--clr-white);
     -webkit-transition: var(--transition);
     transition: var(--transition);
     cursor: pointer;
@@ -368,9 +369,6 @@ Sidebar
     margin-left: 0;
 }
 
-.hero-img {
-    display: none;
-}
 
 .hero {
     background: var(--clr-primary);
@@ -427,13 +425,18 @@ Sidebar
 }
 
 /* section title added to globals */
+
+.about {
+    background: var(--clr-white);
+}
+
 .about-title {
     text-align: left;
     margin-bottom: 2rem;
 }
 
 .about-title h2 {
-    color: var(--clr-primary)
+    color: var(--clr-secondary);
 }
 
 .about-title .underline {
@@ -467,10 +470,21 @@ Sidebar
     }
 }
 
+@media screen and (max-width: 992px) {
+    .about-img {
+        display: none;
+    }
+}
+
+.projects {
+    background: var(--clr-primary);
+}
+
 .projects-text {
     width: 85vw;
     max-width: 30rem;
     margin: 0 auto;
+    color: var(--clr-white);
 }
 
 .project {
@@ -596,7 +610,7 @@ Sidebar
 }
 
 .skills {
-    background: var(--clr-primary);
+    background: var(--clr-white);
 }
 
 .skills h3 {
@@ -612,6 +626,10 @@ Sidebar
     margin-bottom: 0.5rem;
     text-transform: capitalize;
     color: var(--clr-primary);
+}
+
+.section-title h2 {
+    color: var(--clr-primary)
 }
 
 .skill-container {
@@ -675,6 +693,7 @@ Timeline
 
 .timeline p {
     margin-bottom: 0;
+    color: var(--clr-white);
 }
 
 .timeline-item:nth-child(even) {
@@ -833,9 +852,10 @@ Footer
 */
 .footer {
     padding-bottom: 2rem;
-    background: #222;
+    background: var(--clr-primary);
     display: grid;
     place-items: center;
+    color: var(--clr-white);
 }
 
 .footer .social-icons {
@@ -843,14 +863,15 @@ Footer
 }
 
 .footer .social-icon {
-    color: var(--clr-secondary);
+    color: var(--clr-white);
 }
 
 .footer .social-icon:hover {
-    color: var(--clr-primary);
+    color: var(--clr-secondary);
 }
 
 .footer p {
     font-size: 1.25rem;
     text-transform: capitalize;
+    color: var(--clr-white);
 }
