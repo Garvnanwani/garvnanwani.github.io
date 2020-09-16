@@ -33,6 +33,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--ff-secondary);
     background: var(--clr-white);
@@ -391,6 +395,17 @@ Sidebar
     margin-top: 1.25rem;
 }
 
+.hero-img::before {
+    content: "";
+    position: absolute;
+    width: 67%;
+    height: 67%;
+    border: 0.25rem solid var(--clr-secondary);
+    top: 23rem;
+    right: 2rem;
+    border-radius: var(--radius);
+}
+
 @media screen and (min-width: 992px) {
     .hero-img {
         display: block;
@@ -413,6 +428,8 @@ Sidebar
         border-radius: var(--radius);
     }
 }
+
+
 
 .hero-photo {
     max-width: 25rem;
@@ -671,7 +688,7 @@ Sidebar
     border: 7px solid var(--clr-primary);
     border-radius: 25px;
     margin: 2rem 0;
-    box-shadow: 5px 5px 45px -15px black;
+    box-shadow: 5px 5px 45px -15px var(--clr-primary);
 }
 
 
