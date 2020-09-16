@@ -14,5 +14,6 @@
 [] add google analytics
 [x] Make two repos one private which has minified version and one public for the template
 
-[x] button ke uper link aur unpe target
+[] button ke uper link aur unpe target
+[] saare image pe alts
 [x] padding project section ki
