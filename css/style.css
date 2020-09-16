@@ -499,32 +499,38 @@ Sidebar
     color: var(--clr-white) !important;
 }
 
-@media screen and (min-width: 676px) {
-    .projects-center {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        -webkit-column-gap: 2rem;
-        -moz-column-gap: 2rem;
-        column-gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .projects-center {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.projects-center {
+    margin: 3rem auto 0rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 1170px) {
     .projects-center {
-        grid-template-rows: 200px 200px;
-        gap: 1rem;
-        grid-template-areas:
-            "a b b"
-            "a c d";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
     }
-
 }
+
+.projects-center article {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    border: 2px solid var(--clr-secondary);
+    border-radius: 10px;
+    margin: 2rem 1rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.projects-center article:hover {
+    box-shadow: 7px 5px 30px -10px var(--clr-white);
+}
+
+.project-img img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 
 
 @media screen and (min-width: 1170px) {
