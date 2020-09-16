@@ -1,6 +1,6 @@
 [] Add Seo features on the website
 
-[] Section -
+[x] Section -
     1) Hero
     2) About
     3) Projects
@@ -9,10 +9,10 @@
     6) Blogs
     7) Contact
 
-[] Link font awesome, get the google fonts
-[] Get all the images
+[x] Link font awesome, get the google fonts
+[x] Get all the images
 [] add google analytics
-[] Make two repos one private which has minified version and one public for the template
+[x] Make two repos one private which has minified version and one public for the template
 
-[] button ke uper link aur unpe target
-[] padding project section ki
+[x] button ke uper link aur unpe target
+[x] padding project section ki
