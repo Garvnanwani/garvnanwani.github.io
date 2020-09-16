@@ -9,6 +9,7 @@
 :root {
     /* dark shades of primary color*/
     --clr-primary: #332C38;
+    /*rgb(51, 44, 56)*/
     --clr-secondary: #F64C72;
     --clr-white: #fff;
     --ff-primary: "Roboto", sans-serif;
@@ -427,13 +428,17 @@ Sidebar
         right: -2rem;
         border-radius: var(--radius);
     }
+
+    .about-img::before {
+        border: 0.25rem solid var(--clr-primary);
+    }
 }
 
 
 
 .hero-photo {
     max-width: 25rem;
-    max-height: 30rem;
+    max-height: 25rem;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: var(--radius);
@@ -674,6 +679,7 @@ Sidebar
 .skill-icn {
     width: 100px !important;
     margin: 2rem auto;
+    padding: 1rem;
 }
 
 .skill-container {
@@ -834,6 +840,9 @@ Blog
     font-size: 14px;
     margin: 0 0 40px 0;
     font-weight: 500;
+}
+
+.card {
     color: rgb(70, 68, 68);
 }
 
