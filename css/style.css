@@ -52,7 +52,7 @@ ul {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 img:not(.nav-logo) {
@@ -512,7 +512,7 @@ Sidebar
 
 .card-list {
     width: 100%;
-    margin: 2rem auto;
+    margin: -3rem auto 2rem;
     display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr;
@@ -543,7 +543,7 @@ Sidebar
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    padding: 100px 0 0 0;
+    padding: -95px 0 0 0;
     -webkit-box-shadow: 0 0 60px -15px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 60px -15px rgba(0, 0, 0, 0.25);
     -webkit-transition: -webkit-transform 300ms ease;
@@ -575,6 +575,16 @@ Sidebar
 #card-3 .colorband {
     background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.project-card .project-img img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 100%
+}
+
+.project-card .project-img {
+    min-height: 42%;
 }
 
 .project-card h2 {
@@ -633,6 +643,15 @@ Sidebar
     cursor: pointer;
 }
 
+.actions button a {
+    color: var(--clr-primary);
+}
+
+.actions button a:hover {
+    color: var(--clr-white);
+}
+
+
 .actions button:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -640,7 +659,7 @@ Sidebar
     background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
     background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-    color: #fff;
+    color: #fff !important;
     border: none;
     z-index: 100;
     border-radius: 25px;
@@ -673,35 +692,6 @@ Sidebar
 
 .actions button>span {
     display: block;
-}
-
-.avatar {
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    width: 150px;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-radius: 50%;
-    background: #fff;
-    -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    -webkit-transition: -webkit-transform 200ms ease;
-    transition: -webkit-transform 200ms ease;
-    -o-transition: transform 200ms ease;
-    transition: transform 200ms ease;
-    transition: transform 200ms ease, -webkit-transform 200ms ease;
-}
-
-.avatar:hover {
-    -webkit-transform: translateX(-50%) scale(1.1);
-    -ms-transform: translateX(-50%) scale(1.1);
-    transform: translateX(-50%) scale(1.1);
-}
-
-.avatar svg {
-    width: 100%;
 }
 
 @media screen and (min-width: 1170px) {

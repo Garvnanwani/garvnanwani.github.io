@@ -12,4 +12,7 @@
 [] Link font awesome, get the google fonts
 [] Get all the images
 [] add google analytics
-[] Make two repos one private which has minified version and one      public for the template
+[] Make two repos one private which has minified version and one public for the template
+
+[] button ke uper link aur unpe target
+[] padding project section ki
