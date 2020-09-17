@@ -1000,3 +1000,9 @@ Footer
         font-size: 1.25rem;
     }
 }
+
+@media (max-width: 375px) {
+    .footer p {
+        font-size: 0.80rem;
+    }
+}
