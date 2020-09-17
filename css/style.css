@@ -212,6 +212,8 @@ p {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-logo {
