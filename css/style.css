@@ -538,6 +538,7 @@ Sidebar
     padding: -95px 0 0 0;
     -webkit-box-shadow: 0 0 60px -15px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 60px -15px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--clr-white);
     -webkit-transition: -webkit-transform 300ms ease;
     transition: -webkit-transform 300ms ease;
     -o-transition: transform 300ms ease;
