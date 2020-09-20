@@ -53,6 +53,7 @@ ul {
 
 a {
     text-decoration: none !important;
+    outline: none !important;
 }
 
 img:not(.nav-logo) {
@@ -282,6 +283,16 @@ p {
     }
 }
 
+@media screen and (max-width: 360px) {
+    .hero-info h4 {
+        font-size: .9rem;
+    }
+
+    .section * {
+        max-width: 95vw;
+    }
+}
+
 /*
 =============== 
 Sidebar
@@ -362,6 +373,7 @@ Sidebar
     transition: var(--transition);
     color: #bb2525;
     cursor: pointer;
+    outline: none;
 }
 
 .close-btn:hover {
