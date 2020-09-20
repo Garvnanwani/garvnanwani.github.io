@@ -236,6 +236,9 @@ p {
     font-size: 2rem;
     cursor: pointer;
     justify-self: end;
+    position: fixed;
+    top: 5px;
+    right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -563,6 +566,12 @@ Sidebar
     transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
+@media screen and (min-width: 800px) {
+    .project-card .desc {
+        min-height: 170px;
+    }
+}
+
 .colorband {
     height: 2px;
     background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
@@ -728,10 +737,24 @@ Sidebar
     color: var(--clr-primary)
 }
 
+.skill-name {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
 .skill-icn {
     width: 100px !important;
     margin: 2rem auto;
     padding: 1rem;
+    height: 120px;
+}
+
+@media screen and (max-width: 990px) {
+    .skill-icn {
+        height: 105px;
+        margin: 1rem auto;
+    }
 }
 
 .skill-container {
@@ -756,6 +779,7 @@ Sidebar
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
+    margin: 0 0.8rem;
 }
 
 .skill-box-1 {
@@ -939,12 +963,14 @@ Blog
 
 .card-body h4 {
     margin: 10px 0;
+    letter-spacing: 0.07rem;
 }
 
 .card-body p {
     font-size: 14px;
     margin: 0 0 40px 0;
     font-weight: 500;
+    min-height: 169px;
 }
 
 .card {
