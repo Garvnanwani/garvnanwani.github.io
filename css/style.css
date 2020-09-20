@@ -474,6 +474,11 @@ Sidebar
     justify-self: center;
 }
 
+.daily-link {
+    color: var(--clr-primary);
+    text-decoration: underline !important;
+}
+
 @media screen and (min-width: 992px) {
     .about-center {
         grid-template-columns: 1fr 1fr;
