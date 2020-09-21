@@ -342,7 +342,7 @@ Sidebar
 }
 
 .sidebar-links a:hover {
-    color: var(--clr-secondary);
+    color: var(--clr-white);
 }
 
 .social-icons {
@@ -531,10 +531,15 @@ Sidebar
     grid-gap: 4rem;
 }
 
+@media screen and (min-width: 760px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (min-width: 992px) {
     .card-list {
         grid-template-columns: repeat(3, 1fr);
-
     }
 }
 
@@ -566,7 +571,7 @@ Sidebar
     transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 760px) {
     .project-card .desc {
         min-height: 170px;
     }
@@ -792,6 +797,24 @@ Sidebar
     column-gap: 1.2rem;
 }
 
+@media screen and (min-width: 760px) {
+    .skills-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        -webkit-column-gap: 2rem;
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    .skill-box-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        -webkit-column-gap: 1.2rem;
+        -moz-column-gap: 1.2rem;
+        column-gap: 1.2rem;
+    }
+}
+
 @media screen and (min-width: 1170px) {
     .skills-center {
         display: grid;
@@ -905,7 +928,7 @@ Blog
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 3.5rem;
     justify-content: space-between !important;
     margin: auto;
@@ -1006,9 +1029,16 @@ Blog
     color: #888785;
 }
 
-@media (max-width: 940px) {
+@media screen and (min-width: 760px) {
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 1160px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
 }
