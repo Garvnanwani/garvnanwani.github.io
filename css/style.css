@@ -237,8 +237,8 @@ p {
     cursor: pointer;
     justify-self: end;
     position: fixed;
-    top: 5px;
-    right: 15px;
+    top: 10px;
+    right: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -666,47 +666,49 @@ Sidebar
     color: var(--clr-primary);
 }
 
-.actions button a:hover {
-    color: var(--clr-white);
-}
+@media screen and (min-width: 960px) {
+    .actions button a:hover {
+        color: var(--clr-white);
+    }
 
 
-.actions button:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
-    background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-    color: #fff !important;
-    border: none;
-    z-index: 100;
-    border-radius: 25px;
-    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.1)
-}
+    .actions button:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
+        background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
+        background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+        color: #fff !important;
+        border: none;
+        z-index: 100;
+        border-radius: 25px;
+        -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.1)
+    }
 
-.actions button:active {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-}
+    .actions button:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 
-#card-1 .actions button:hover {
-    background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
-    background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-}
+    #card-1 .actions button:hover {
+        background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
+        background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
+        background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    }
 
-#card-2 .actions button:hover {
-    background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
-    background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-}
+    #card-2 .actions button:hover {
+        background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+        background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    }
 
-#card-3 .actions button:hover {
-    background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    #card-3 .actions button:hover {
+        background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
 }
 
 .actions button>span {
@@ -970,8 +972,14 @@ Blog
     font-size: 14px;
     margin: 0 0 40px 0;
     font-weight: 500;
-    min-height: 169px;
 }
+
+@media (min-width: 940px) {
+    .card-body p {
+        min-height: 169px;
+    }
+}
+
 
 .card {
     color: rgb(70, 68, 68);
