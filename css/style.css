@@ -297,7 +297,7 @@ p {
 }
 
 /*
-=============== 
+===============
 Sidebar
 ===============
 */
@@ -844,7 +844,7 @@ Sidebar
 
 
 /*
-=============== 
+===============
 Timeline
 ===============
 */
@@ -918,7 +918,7 @@ Timeline
 }
 
 /*
-=============== 
+===============
 Blog
 ===============
 */
@@ -946,7 +946,6 @@ Blog
     overflow: hidden;
     width: 300px;
     border: 6px solid var(--clr-primary);
-    height: 35.5rem;
     box-shadow: 5px 5px 45px -15px black;
 }
 
@@ -997,10 +996,20 @@ Blog
     font-weight: 500;
 }
 
+.mobile-hidden {
+    display: none;
+}
+
+
 @media (min-width: 940px) {
     .card-body p {
-        min-height: 169px;
+        min-height: 125px;
     }
+
+    .mobile-hidden {
+        display: block;
+    }
+
 }
 
 
@@ -1045,7 +1054,7 @@ Blog
 
 
 /*
-=============== 
+===============
 Footer
 ===============
 */
