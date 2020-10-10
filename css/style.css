@@ -148,7 +148,6 @@ p {
 .btn:hover {
     color: var(--clr-primary);
     background: white;
-    border: 1px solid var(--clr-primary);
 }
 
 /* section */
