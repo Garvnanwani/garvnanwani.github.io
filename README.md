@@ -1,5 +1,5 @@
-[garvnanwani.github.io](garvnanwani.github.io)  
+Repository of my Personal Portfolio build completely using Html, CSS and a little bit of Javascript
 
-My personal portfolio website  
+You can check the deployed site at -> [garvnanwani.github.io](garvnanwani.github.io)  
 
-Made completely using HTML and CSS and a little bit of Javascript
+If you like it please consider giving it a star
