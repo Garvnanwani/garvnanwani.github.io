@@ -238,6 +238,7 @@ p {
     position: fixed;
     top: 10px;
     right: 20px;
+    z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
