@@ -561,48 +561,6 @@ Sidebar
   }
 }
 
-.colorband {
-  height: 2px;
-  background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#43e97b),
-    to(#38f9d7)
-  );
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-}
-
-#card-1 .colorband {
-  background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#43e97b),
-    to(#38f9d7)
-  );
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-}
-
-#card-2 .colorband {
-  background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#4facfe),
-    to(#00f2fe)
-  );
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-}
-
-#card-3 .colorband {
-  background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
 .project-card .project-img img {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -680,18 +638,18 @@ Sidebar
   }
 
   .actions button:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
     background-image: -webkit-gradient(
       linear,
       left top,
       right top,
-      from(#43e97b),
-      to(#38f9d7)
+      from(#4facfe),
+      to(#00f2fe)
     );
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     color: #fff !important;
     border: none;
     z-index: 100;
@@ -704,35 +662,6 @@ Sidebar
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
-  }
-
-  #card-1 .actions button:hover {
-    background-image: -o-linear-gradient(left, #43e97b 0%, #38f9d7 100%);
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#43e97b),
-      to(#38f9d7)
-    );
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-  }
-
-  #card-2 .actions button:hover {
-    background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#4facfe),
-      to(#00f2fe)
-    );
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  }
-
-  #card-3 .actions button:hover {
-    background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
 }
 
