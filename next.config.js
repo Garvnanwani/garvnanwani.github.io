@@ -1,9 +1,7 @@
 module.exports = {
   future: {
-    webpack5: true,
-    strictPostcssConfiguration: true
+    webpack5: true
   },
-  reactStrictMode: true,
   experimental: {
     turboMode: true,
     eslint: true

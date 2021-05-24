@@ -1,11 +1,13 @@
-import Meta from '../components/Meta'
-import Navbar from '../components/Navbar'
+import Container from '@/components/Container'
 
 export default function Home() {
-    return (
-        <>
-            <Meta />
-            <Navbar />
-        </>
-    )
+  return (
+    <>
+      <Container>
+        <div className="max-w-md mx-auto mt-5">
+          Hello, I am Garv Nanwani and this is my portfolio website
+        </div>
+      </Container>
+    </>
+  )
 }
