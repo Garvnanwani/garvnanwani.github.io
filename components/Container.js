@@ -22,7 +22,7 @@ const Container = ({ children, ...customMeta }) => {
   }
 
   return (
-    <div className="bg-white dark:bg-primary">
+    <div className="min-h-screen bg-white dark:bg-primary">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -108,7 +108,7 @@ const Container = ({ children, ...customMeta }) => {
           </Link>
         </div>
       </nav>
-      <main className="flex flex-col px-8 bg-white justify-cente r dark:bg-primary">
+      <main className="flex flex-col justify-center px-8 text-center text-black bg-white min-h-3/4 dark:text-white dark:bg-primary">
         {children}
       </main>
       <Footer />

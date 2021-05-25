@@ -10,6 +10,9 @@ module.exports = {
         primary: 'var(--clr-primary)',
         secondary: 'var(--clr-secondary)'
       },
+      minHeight: {
+        '3/4': '75vh'
+      },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans]
       },
