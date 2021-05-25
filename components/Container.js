@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import Footer from './Footer'
 
 const Container = ({ children, ...customMeta }) => {
   const [mounted, setMounted] = useState(false)
@@ -110,6 +111,7 @@ const Container = ({ children, ...customMeta }) => {
       <main className="flex flex-col px-8 bg-white justify-cente r dark:bg-primary">
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

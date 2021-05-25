@@ -69,7 +69,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto mt-9">
+        <div className="mx-auto mt-9">
           <Image
             src="/mypic.jpg"
             alt="garv nanwani"
@@ -78,7 +78,6 @@ const Header = () => {
             objectFit="cover"
             className="z-10 mx-auto"
           />
-          <div className="absolute md:border-4 md:w-96 md:h-96 md:top-12 left-14 md:border-secondary"></div>
         </div>
       </div>
     </div>
