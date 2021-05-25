@@ -96,7 +96,7 @@ const Container = ({ children, ...customMeta }) => {
           <Link href="/blog">
             <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Blog</a>
           </Link>
-          <Link href="/Projects">
+          <Link href="/projects">
             <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">
               Projects
             </a>
