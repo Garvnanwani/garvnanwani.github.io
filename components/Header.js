@@ -9,7 +9,7 @@ import {
 
 const Header = () => {
   return (
-    <div>
+    <div className="mx-auto">
       <div className="items-center justify-between mx-auto md:flex">
         <div>
           <div className="underline"></div>
@@ -78,7 +78,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="mx-auto mt-9">
+        <div className="mt-9">
           <Image
             src="/mypic.jpg"
             alt="garv nanwani"
