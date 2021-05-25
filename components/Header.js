@@ -1,4 +1,11 @@
 import Image from 'next/image'
+import {
+  FaDev,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter
+} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -16,15 +23,15 @@ const Header = () => {
           >
             Contact me
           </button>
-          <ul className="">
+          <ul className="grid justify-center grid-cols-5 mt-8 w-80">
             <li>
               <a
-                href="https://twitter.com/thisisgarv"
+                href="https://twitter.com/garvnanwani"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary"
               >
-                <i className="fab fa-twitter"></i>
+                <FaTwitter />
               </a>
             </li>
             <li>
@@ -32,9 +39,9 @@ const Header = () => {
                 href="https://www.linkedin.com/in/garvnanwani/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary"
               >
-                <i className="fab fa-linkedin"></i>
+                <FaLinkedin />
               </a>
             </li>
             <li>
@@ -42,19 +49,19 @@ const Header = () => {
                 href="https://github.com/Garvnanwani"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary"
               >
-                <i className="fab fa-github"></i>
+                <FaGithub />
               </a>
             </li>
             <li>
               <a
-                href="https://dev.to/thisisgarv"
+                href="https://dev.to/garvnanwani"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary"
               >
-                <i className="fab fa-dev"></i>
+                <FaDev />
               </a>
             </li>
             <li>
@@ -62,9 +69,9 @@ const Header = () => {
                 href="https://www.instagram.com/garv_nanwani/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary"
               >
-                <i className="fab fa-instagram"></i>
+                <FaInstagram />
               </a>
             </li>
           </ul>
