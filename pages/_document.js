@@ -12,7 +12,7 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
+          <link href="/favicon.ico" rel="shortcut icon" />
 
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
