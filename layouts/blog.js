@@ -1,4 +1,5 @@
 import Container from '@/components/Container'
+import ViewCounter from '@/components/ViewCounter'
 import { format, parseISO } from 'date-fns'
 import Image from 'next/image'
 
@@ -39,6 +40,8 @@ export default function BlogLayout({ children, frontMatter }) {
           </div>
           <p className="mt-2 text-sm text-gray-500 min-w-32 md:mt-0">
             {frontMatter.readingTime.text}
+            {` • `}
+            <ViewCounter slug={frontMatter.slug} />
           </p>
         </div>
         <div className="w-full prose dark:prose-dark max-w-none">
@@ -52,7 +55,6 @@ export default function BlogLayout({ children, frontMatter }) {
           >
             {'Discuss on Twitter'}
           </a>
-          {` • `}
           <a
             href={editUrl(frontMatter.slug)}
             target="_blank"

@@ -28,6 +28,7 @@
         "big.js": "^6.1.1",
         "comma-number": "^2.1.0",
         "date-fns": "^2.21.3",
+        "firebase-admin": "^9.9.0",
         "framer-motion": "^4.1.17",
         "gray-matter": "^4.0.3",
         "mdx-prism": "^0.3.3",

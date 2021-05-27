@@ -1,16 +1,15 @@
-import { MDXRemote } from 'next-mdx-remote';
-
-import { getFiles, getFileBySlug } from '@/lib/mdx';
-import { getTweets } from '@/lib/twitter';
-import BlogLayout from '@/layouts/blog';
-import Tweet from '@/components/Tweet';
-import MDXComponents from '@/components/MDXComponents';
+import MDXComponents from '@/components/MDXComponents'
+import Tweet from '@/components/Tweet'
+import BlogLayout from '@/layouts/blog'
+import { getFileBySlug, getFiles } from '@/lib/mdx'
+import { getTweets } from '@/lib/twitter'
+import { MDXRemote } from 'next-mdx-remote'
 
 export default function Blog({ mdxSource, tweets, frontMatter }) {
   const StaticTweet = ({ id }) => {
-    const tweet = tweets.find((tweet) => tweet.id === id);
-    return <Tweet {...tweet} />;
-  };
+    const tweet = tweets.find((tweet) => tweet.id === id)
+    return <Tweet {...tweet} />
+  }
 
   return (
     <BlogLayout frontMatter={frontMatter}>
@@ -22,11 +21,11 @@ export default function Blog({ mdxSource, tweets, frontMatter }) {
         }}
       />
     </BlogLayout>
-  );
+  )
 }
 
 export async function getStaticPaths() {
-  const posts = await getFiles('blog');
+  const posts = await getFiles('blog')
 
   return {
     paths: posts.map((p) => ({
@@ -35,12 +34,12 @@ export async function getStaticPaths() {
       }
     })),
     fallback: false
-  };
+  }
 }
 
 export async function getStaticProps({ params }) {
-  const post = await getFileBySlug('blog', params.slug);
-  const tweets = await getTweets(post.tweetIDs);
+  const post = await getFileBySlug('blog', params.slug)
+  const tweets = await getTweets(post.tweetIDs)
 
-  return { props: { ...post, tweets } };
+  return { props: { ...post, tweets } }
 }
