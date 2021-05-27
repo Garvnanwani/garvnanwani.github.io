@@ -28,7 +28,7 @@ export default function BlogLayout({ children, frontMatter }) {
               alt="Garv nanwani"
               height={24}
               width={24}
-              src="/avatar.jpg"
+              src="/mypic.jpg"
               className="rounded-full"
             />
             <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
