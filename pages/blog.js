@@ -17,16 +17,16 @@ export default function Blog({ posts }) {
   return (
     <Container
       title="Blog - Garv nanwani"
-      description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
+      description="Thoughts on the software industry, programming, tech, and my personal life."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mt-5 mb-16 md:mt-7 ">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
+          {`Here you can find all my blogs that I have written since 2020, mostly about web development, blockchain, crypto and life.
             In total, I've written ${posts.length} articles on this site.
-            Use the search below to filter by title.`}
+            Use the search below to filter them by title.`}
         </p>
         <div className="relative w-full mb-4">
           <input
