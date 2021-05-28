@@ -19,7 +19,7 @@ export default function BlogLayout({ children, frontMatter }) {
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
-      <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+      <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mt-5 mb-16 md:mt-7">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           {frontMatter.title}
         </h1>
@@ -44,24 +44,8 @@ export default function BlogLayout({ children, frontMatter }) {
             <ViewCounter slug={frontMatter.slug} />
           </p>
         </div>
-        <div className="w-full prose dark:prose-dark max-w-none">
+        <div className="w-full mt-3 prose dark:prose-dark max-w-none">
           {children}
-        </div>
-        <div className="text-sm text-gray-700 dark:text-gray-300">
-          <a
-            href={discussUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Discuss on Twitter'}
-          </a>
-          <a
-            href={editUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Edit on GitHub'}
-          </a>
         </div>
       </article>
     </Container>
