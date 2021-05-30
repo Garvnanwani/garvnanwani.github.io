@@ -50,7 +50,7 @@ export default function Contact() {
           <div className="flex flex-col justify-between">
             <div className="mb-10">
               <p className="text-lg">
-                You can reach out to me anytime on my social media handles ->
+                You can reach out to me anytime on my social media handles -&gt;
               </p>
               <ul className="grid justify-center grid-cols-5 mt-8 w-80">
                 <li>
@@ -106,7 +106,7 @@ export default function Contact() {
               </ul>
             </div>
             <div className="text-lg">
-              <p className="mb-6 ">Or send me a message directly -></p>
+              <p className="mb-6 ">Or send me a message directly -&gt;</p>
               <form
                 className="flex flex-col justify-between"
                 onSubmit={contact}
