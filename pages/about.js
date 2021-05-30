@@ -6,7 +6,10 @@ export default function About() {
     <>
       <Container>
         <div className="justify-between w-full mx-auto mt-10 text-gray-800 dark:text-white lg:flex min-h-3/4 md:my-20 md:max-w-5xl">
-          <div className="mb-5 text-3xl lg:hidden ">About me</div>
+          <div className="lg:hidden">
+            <div className="h-1 w-28 bg-secondary"></div>
+            <div className="my-5 text-3xl">About me</div>
+          </div>
           <Image
             src="/mypic2.jpg"
             alt="garv nanwani"
@@ -14,7 +17,8 @@ export default function About() {
             height={450}
           />
           <div className="max-w-xl lg:ml-10">
-            <div className="hidden mb-5 text-5xl lg:block">About Me</div>
+            <div className="hidden h-1 lg:block w-28 bg-secondary"></div>
+            <div className="hidden my-5 text-5xl lg:block">About Me</div>
             <div className="mb-7">
               Hey, My name is Garv Nanwani and I am currently a Second Year
               Computer Science Undergraduate Student at JMI,

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import {
   FaDev,
   FaGithub,
@@ -12,20 +13,19 @@ const Header = () => {
     <div className="mx-auto">
       <div className="items-center justify-between mx-auto md:flex">
         <div>
-          <div className="underline"></div>
-          <h1 className="mb-2 font-mono text-6xl dark-black dark:text-white md:mb-6">
+          <div className="h-1 w-28 bg-secondary"></div>
+          <h1 className="mt-5 mb-2 font-mono text-6xl dark-black dark:text-white md:mb-6">
             I'm Garv
           </h1>
-          <h4 className="mb-4 text-2xl md:my-6 text-secondary">
+          <h4 className="mb-4 text-2xl md:mt-6 md:mb-10 text-secondary">
             Full Stack Web Developer And Designer
           </h4>
-          <button
-            href=""
-            className="p-3 my-5 text-white bg-gray-600 rounded w-50 h-50 focus:outline-none dark:bg-gray-800 "
-          >
-            Contact me
-          </button>
-          <ul className="grid justify-center grid-cols-5 mt-8 w-80">
+          <Link href="/contact">
+            <a className="p-3 my-5 text-white bg-gray-600 rounded md:my-14 w-50 h-50 focus:outline-none dark:bg-gray-800 ">
+              Contact me
+            </a>
+          </Link>
+          <ul className="grid justify-center grid-cols-5 mt-16 w-80">
             <li>
               <a
                 href="https://twitter.com/garvnanwani"
