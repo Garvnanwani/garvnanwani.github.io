@@ -16,7 +16,6 @@ class MyDocument extends Document {
 
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
-          <script async src="https://cdn.splitbee.io/sb.js"></script>
         </Head>
         <body>
           <Main />
