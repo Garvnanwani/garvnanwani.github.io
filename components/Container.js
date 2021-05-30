@@ -22,7 +22,7 @@ const Container = ({ children, ...customMeta }) => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-primary">
+    <div className="min-h-screen bg-red-200 dark:bg-primary">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -49,7 +49,7 @@ const Container = ({ children, ...customMeta }) => {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="flex items-center justify-between w-full p-4 mx-auto my-0 text-gray-900 bg-white md:max-w-6xl sticky-nav dark:bg-primary bg-opacity-60 dark:text-gray-100">
+      <nav className="flex items-center justify-between w-full p-4 mx-auto my-0 text-gray-900 bg-red-200 md:max-w-6xl sticky-nav dark:bg-primary bg-opacity-60 dark:text-gray-100">
         <div>
           <Link href="/">
             <a className="mr-2 md:mr-8">Garv </a>
@@ -57,7 +57,7 @@ const Container = ({ children, ...customMeta }) => {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-10 h-10 p-3 bg-gray-200 rounded focus:outline-none dark:bg-gray-800 "
+            className="p-3 h-11 w-11 focus:outline-none"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
@@ -108,7 +108,7 @@ const Container = ({ children, ...customMeta }) => {
           </Link>
         </div>
       </nav>
-      <main className="flex flex-col px-8 text-black bg-white min-h-3/4 dark:text-white dark:bg-primary">
+      <main className="flex flex-col px-8 text-black min-h-3/4 dark:text-white">
         {children}
       </main>
       <Footer />

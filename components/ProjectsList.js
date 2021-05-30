@@ -29,7 +29,7 @@ const projects = [
 
 const ProjectsList = () => {
   return (
-    <div className="flex flex-wrap justify-around gap-10">
+    <div className="flex flex-wrap justify-start gap-20">
       {projects.map((project) => {
         return (
           <ProjectCard
