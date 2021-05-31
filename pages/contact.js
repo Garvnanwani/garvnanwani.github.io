@@ -45,9 +45,9 @@ export default function Contact() {
   return (
     <>
       <Container>
-        <div className="w-full mx-auto mt-5 text-gray-800 dark:text-white md:mt-15 md:mb-20 md:max-w-5xl">
+        <div className="w-full mx-auto mt-5 md:mt-15 md:mb-20 md:max-w-5xl">
           <div className="w-24 h-1 mb-5 bg-secondary"></div>
-          <h1 className="mb-10 text-2xl font-bold tracking-tight text-black md:text-3xl dark:text-white">
+          <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
             Contact Me
           </h1>
           <div className="flex flex-col justify-between">

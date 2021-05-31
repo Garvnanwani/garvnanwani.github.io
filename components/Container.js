@@ -108,7 +108,7 @@ const Container = ({ children, ...customMeta }) => {
           </Link>
         </div>
       </nav>
-      <main className="flex flex-col px-8 text-black min-h-3/4 dark:text-white">
+      <main className="flex flex-col px-8 text-gray-800 min-h-3/4 dark:text-white">
         {children}
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function Blog({ posts }) {
       title="Blog - Garv nanwani"
       description="Thoughts on the software industry, programming, tech, and my personal life."
     >
-      <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mt-5 mb-16 md:mt-7 ">
+      <div className="flex flex-col items-start justify-center w-full mx-auto mt-5 text-gray-800 md:mt-15 md:mb-20 md:max-w-5xl">
         <div className="w-16 h-1 mb-5 bg-secondary"></div>
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
