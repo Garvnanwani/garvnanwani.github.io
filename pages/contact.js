@@ -45,7 +45,10 @@ export default function Contact() {
 
   return (
     <>
-      <Container>
+      <Container
+        title="Contact - Garv nanwani"
+        description="Contact Garv nanwani over various social media platforms or message directly."
+      >
         <div className="w-full mx-auto mt-5 md:mt-15 md:mb-20 md:max-w-5xl">
           <div className="w-24 h-1 mb-5 bg-secondary"></div>
           <h1 className="mb-10 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
