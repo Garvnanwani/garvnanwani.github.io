@@ -49,7 +49,7 @@ const Container = ({ children, ...customMeta }) => {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="flex items-center justify-between w-full p-4 mx-auto my-0 text-gray-900 bg-red-200 md:max-w-6xl sticky-nav dark:bg-primary bg-opacity-60 dark:text-gray-100">
+      <nav className="flex items-center justify-between w-full p-4 mx-auto text-gray-900 bg-red-200 md:max-w-6xl sticky-nav dark:bg-primary bg-opacity-60 dark:text-gray-100">
         <div>
           <Link href="/">
             <a className="relative mr-2 md:bottom-0 bottom-1 md:mr-8">Garv </a>

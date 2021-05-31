@@ -10,13 +10,13 @@ import {
 
 const Header = () => {
   return (
-    <div className="items-center justify-between mx-auto md:flex">
+    <div className="items-center justify-between w-full mx-auto mt-5 text-gray-800 md:mt-15 md:mb-20 md:max-w-5xl md:flex">
       <div>
-        <div className="h-1 w-28 bg-secondary"></div>
-        <h1 className="mt-5 mb-2 font-mono text-6xl dark-black dark:text-white md:mb-6">
-          I'm Garv
+        <div className="w-24 h-1 mb-5 bg-secondary"></div>
+        <h1 className="mt-5 mb-2 font-mono text-4xl md:text-6xl dark-black dark:text-white md:mb-6">
+          Hii, I'm Garv
         </h1>
-        <h4 className="mb-4 text-2xl md:mt-6 md:mb-10 text-secondary">
+        <h4 className="mt-6 mb-12 text-2xl md:mt-6 md:mb-10 text-secondary">
           Full Stack Web Developer And Designer
         </h4>
         <Link href="/contact">
