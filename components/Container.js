@@ -52,12 +52,12 @@ const Container = ({ children, ...customMeta }) => {
       <nav className="flex items-center justify-between w-full p-4 mx-auto my-0 text-gray-900 bg-red-200 md:max-w-6xl sticky-nav dark:bg-primary bg-opacity-60 dark:text-gray-100">
         <div>
           <Link href="/">
-            <a className="mr-2 md:mr-8">Garv </a>
+            <a className="relative mr-2 md:bottom-0 bottom-1 md:mr-8">Garv </a>
           </Link>
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="p-3 h-11 w-11 focus:outline-none"
+            className="w-12 h-12 p-4 focus:outline-none"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
