@@ -20,15 +20,17 @@ export default function Blog({ posts }) {
       description="Thoughts on the software industry, programming, tech, and my personal life."
     >
       <div className="flex flex-col items-start justify-center w-full mx-auto mt-5 text-gray-800 md:mt-15 md:mb-20 md:max-w-5xl">
-        <div className="w-16 h-1 mb-5 bg-secondary"></div>
+        <div className="w-10 h-1 mb-5 bg-secondary"></div>
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
-        <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`Here you can find all my blogs that I have written since 2020, mostly about web development, blockchain, crypto and life.
-            In total, I've written ${posts.length} articles on this site.
-            Use the search below to filter them by title.`}
-        </p>
+        <div className="mb-4 text-gray-600 dark:text-gray-400">
+          <p className="mb-3">
+            {`Here you can find all my blogs that I have written since 2020, mostly about web development, blockchain, crypto and life.
+              In total, I've written ${posts.length} articles on this site.`}
+          </p>
+          <p>Use the search below to filter them by title.</p>
+        </div>
         <div className="relative w-full mb-4">
           <input
             aria-label="Search articles"
@@ -54,7 +56,7 @@ export default function Blog({ posts }) {
         </div>
         {!searchValue && (
           <>
-            <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+            <h3 className="mt-8 mb-4 text-xl font-bold tracking-tight text-black md:text-3xl dark:text-white">
               Most Popular
             </h3>
             <BlogPost
@@ -64,7 +66,7 @@ export default function Blog({ posts }) {
             />
           </>
         )}
-        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+        <h3 className="mt-8 mb-4 text-xl font-bold tracking-tight text-black md:text-3xl dark:text-white">
           All Posts
         </h3>
         {!filteredBlogPosts.length && (
