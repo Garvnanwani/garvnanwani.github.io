@@ -11,7 +11,7 @@ import {
 import { HiOutlineMail } from 'react-icons/hi'
 
 export default function Contact() {
-  const [loading, setLoading] = useState('Send Message')
+  const [loading, setLoading] = useState('Send Message 📨')
   const nameRef = useRef()
   const emailRef = useRef()
   const messageRef = useRef()
@@ -156,7 +156,7 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="max-w-sm px-4 py-2 font-bold text-left text-white bg-gray-600 rounded mb-7 hover:bg-gray-800 "
+                  className="w-full max-w-md px-4 py-2 font-bold text-left text-white bg-gray-600 rounded mb-7 hover:bg-gray-800"
                 >
                   {loading}
                 </button>

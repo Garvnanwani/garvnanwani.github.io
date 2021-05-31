@@ -30,8 +30,8 @@ const ProjectCard = ({ title, description, image, tech }) => {
                 )
               })}
             </div>
-            <div className="flex gap-10 mt-4">
-              <span className="font-semibold text-teal-600 text-md">
+            <div className="flex mt-6">
+              <span className="font-semibold text-teal-600 mr-14 text-md">
                 <FaGithub />
               </span>
               <span className="text-sm text-gray-600">
