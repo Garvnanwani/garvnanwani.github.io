@@ -4,7 +4,7 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 const ProjectCard = ({ title, description, image, tech }) => {
   console.log(tech)
   return (
-    <div className="flex flex-row flex-wrap mb-5 md:mr-16">
+    <div className="flex flex-row flex-wrap mb-5 md:mr-16 sm:mx-auto md:mx-0">
       <div>
         <Image
           width={350}
