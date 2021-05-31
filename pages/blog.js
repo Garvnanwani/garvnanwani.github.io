@@ -24,7 +24,7 @@ export default function Blog({ posts }) {
         <h1 className="mb-10 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
-        <div className="mb-4 text-gray-600 dark:text-gray-400">
+        <div className="mb-8 text-gray-600 dark:text-gray-400">
           <p className="mb-3">
             {`Here you can find all my blogs that I have written since 2020, mostly about web development, blockchain, crypto and life.
               In total, I've written ${posts.length} articles on this site.`}

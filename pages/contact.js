@@ -65,7 +65,7 @@ export default function Contact() {
                     href="https://twitter.com/garvnanwani"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white"
+                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white dark:hover:text-secondary"
                   >
                     <FaTwitter />
                   </a>
@@ -75,7 +75,7 @@ export default function Contact() {
                     href="https://www.linkedin.com/in/garvnanwani/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white"
+                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white dark:hover:text-secondary"
                   >
                     <FaLinkedin />
                   </a>
@@ -85,7 +85,7 @@ export default function Contact() {
                     href="https://github.com/Garvnanwani"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white"
+                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white dark:hover:text-secondary"
                   >
                     <FaGithub />
                   </a>
@@ -95,7 +95,7 @@ export default function Contact() {
                     href="https://dev.to/garvnanwani"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white"
+                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white dark:hover:text-secondary"
                   >
                     <FaDev />
                   </a>
@@ -105,7 +105,7 @@ export default function Contact() {
                     href="https://www.instagram.com/garv_nanwani/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white"
+                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white dark:hover:text-secondary"
                   >
                     <FaInstagram />
                   </a>
@@ -115,7 +115,7 @@ export default function Contact() {
                     href="mailto:garvnawani88@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white"
+                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white dark:hover:text-secondary"
                   >
                     <HiOutlineMail />
                   </a>
