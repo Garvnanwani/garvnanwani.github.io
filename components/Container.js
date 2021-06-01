@@ -16,7 +16,7 @@ const Container = ({ children, ...customMeta }) => {
   const meta = {
     title: 'Garv Nanwani',
     description: `Second Year Coputer Science Student.`,
-    image: 'https://garvnanwani.com/mypic.jpg',
+    image: 'https://garvnanwani.com/og.jpg',
     type: 'website',
     ...customMeta
   }

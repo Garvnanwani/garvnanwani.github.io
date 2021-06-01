@@ -115,7 +115,7 @@ export default function Contact() {
                     href="mailto:garvnawani88@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl transition-all duration-500 ease-in-out cursor-pointer hover:text-secondary dark:text-white dark:hover:text-secondary"
+                    className="relative text-3xl transition-all duration-500 ease-in-out cursor-pointer bottom-1 hover:text-secondary dark:text-white dark:hover:text-secondary"
                   >
                     <HiOutlineMail />
                   </a>
