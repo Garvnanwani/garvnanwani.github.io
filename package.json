@@ -1,16 +1,16 @@
 {
-    "name": "garvnanwani.github.io",
+    "name": "garvnanwani.com",
     "description": "My personal website.",
     "version": "0.0.0",
     "author": {
         "name": "Garv nanwani",
         "email": "garvwashere@gmail.com",
-        "url": "https://garvnanwani.github.io"
+        "url": "https://garvnanwani.com"
     },
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Garvnanwani/garvnanwani.github.io.git"
+        "url": "git+https://github.com/Garvnanwani/garvnanwani.com.git"
     },
     "scripts": {
         "dev": "next dev",

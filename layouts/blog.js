@@ -4,7 +4,7 @@ import { format, parseISO } from 'date-fns'
 import Image from 'next/image'
 
 const editUrl = (slug) =>
-  `https://github.com/garvnanwani/garvnanwani.github.io/edit/main/data/blog/${slug}.mdx`
+  `https://github.com/garvnanwani/garvnanwani.cpm/edit/main/data/blog/${slug}.mdx`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `https://garvnanwani/blog/${slug}`
@@ -15,7 +15,7 @@ export default function BlogLayout({ children, frontMatter }) {
     <Container
       title={`${frontMatter.title} – Garv nanwani`}
       description={frontMatter.summary}
-      image={`https://garvnanwani.github.io${frontMatter.image}`}
+      image={`https://garvnanwani.com${frontMatter.image}`}
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >

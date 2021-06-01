@@ -16,7 +16,7 @@ const Container = ({ children, ...customMeta }) => {
   const meta = {
     title: 'Garv Nanwani',
     description: `Second Year Coputer Science Student.`,
-    image: 'https://garvnanwani.github.io/mypic.jpg',
+    image: 'https://garvnanwani.com/mypic.jpg',
     type: 'website',
     ...customMeta
   }
@@ -29,11 +29,11 @@ const Container = ({ children, ...customMeta }) => {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://garvnanwani.github.io${router.asPath}`}
+          content={`https://garvnanwani.com${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://garvnanwani.github.io${router.asPath}`}
+          href={`https://garvnanwani.com${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Garv nanwani" />
