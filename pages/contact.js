@@ -148,6 +148,7 @@ export default function Contact() {
                     placeholder="Message"
                     type="textarea"
                     cols={400}
+                    rows={3}
                     required
                     className="max-w-sm p-2 text-gray-800 bg-white border-2 border-black rounded mb-7 focus:outline-none"
                     ref={messageRef}
