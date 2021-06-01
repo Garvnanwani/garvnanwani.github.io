@@ -27,7 +27,6 @@
         "@tailwindcss/typography": "^0.4.1",
         "autoprefixer": "^10.2.6",
         "big.js": "^6.1.1",
-        "comma-number": "^2.1.0",
         "date-fns": "^2.22.1",
         "emailjs-com": "^2.6.4",
         "firebase-admin": "^9.9.0",
