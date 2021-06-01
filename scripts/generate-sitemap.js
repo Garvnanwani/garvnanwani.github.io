@@ -1,29 +1,28 @@
-/* eslint-disable */
 const fs = require('fs')
+
 const globby = require('globby')
 const prettier = require('prettier')
 
 ;(async () => {
-  const prettierConfig = await prettier.resolveConfig('./.prettier.config.js')
-
-  // Ignore Next.js specific files (e.g., _app.js) and API routes.
+  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
   const pages = await globby([
-    'pages/*.tsx',
+    'pages/*.js',
     'data/**/*.mdx',
-    '!pages/_*.tsx',
+    '!data/*.mdx',
+    '!pages/_*.js',
     '!pages/api',
-    '!pages/404.tsx'
+    '!pages/404.js'
   ])
-  const books = ['/books/vagabonding'] // hardcoded for now
+
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            ${[...pages, ...books]
+            ${pages
               .map((page) => {
                 const path = page
                   .replace('pages', '')
                   .replace('data', '')
-                  .replace('.tsx', '')
+                  .replace('.js', '')
                   .replace('.mdx', '')
                 const route = path === '/index' ? '' : path
 
@@ -42,5 +41,6 @@ const prettier = require('prettier')
     parser: 'html'
   })
 
+  // eslint-disable-next-line no-sync
   fs.writeFileSync('public/sitemap.xml', formatted)
 })()
