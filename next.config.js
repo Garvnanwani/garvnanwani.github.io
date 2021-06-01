@@ -19,6 +19,10 @@ module.exports = {
     eslint: true
   },
   webpack: (config, { dev, isServer }) => {
+    if (isServer) {
+      require('./scripts/generate-sitemap') // eslint-disable-line
+    }
+
     // Replace React with Preact only in client production build
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {

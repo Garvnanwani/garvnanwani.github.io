@@ -1,2 +1,2 @@
 User-agent: *
-Disallow:
+Sitemap: https://samuelkraft.com/sitemap.xml
